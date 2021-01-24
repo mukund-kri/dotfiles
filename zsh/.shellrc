@@ -1,0 +1,39 @@
+# My custom settings
+export PATH=~/bin:$PATH
+export PATH=$PATH:~/.local/bin
+
+# flutter and dart paths
+export DART_HOME=~/computer/software/flutter/bin/cache/dart-sdk
+export PATH=$PATH:$DART_HOME/bin
+export PATH=$PATH:~/computer/software/flutter/bin
+export PATH=$PATH:~/.pub-cache/bin
+
+# Spark related
+export PATH=$PATH:~/computer/software/spark/bin
+
+#Virtualenvwrapper settings:
+export WORKON_HOME=/opt/dev/python/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+. ~/.local/bin/virtualenvwrapper.sh 
+
+## PRODUCTIVITY
+export NOW_PROJECT=~/workarea/projects/data-projects/
+
+alias cdnow='cd $NOW_PROJECT'
+
+# Java / JVM related config ---------------------------------------------------------------
+export GRADLE_HOME=/opt/jvm/gradle
+export PATH=$PATH:$GRADLE_HOME/bin
+
+# SPRING FRAMEWORK RELATED
+source ~/.sdkman/candidates/springboot/current/shell-completion/bash/spring
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/opt/home/mukund/.sdkman"
+[[ -s "/opt/home/mukund/.sdkman/bin/sdkman-init.sh" ]] && source "/opt/home/mukund/.sdkman/bin/sdkman-init.sh"
+
+source "$HOME/.cargo/env"
+
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
