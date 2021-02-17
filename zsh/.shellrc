@@ -12,7 +12,7 @@ export PATH=$PATH:~/.pub-cache/bin
 export PATH=$PATH:~/computer/software/spark/bin
 
 #Virtualenvwrapper settings:
-export WORKON_HOME=/opt/dev/python/.virtualenvs
+export WORKON_HOME=/opt/home/mukund/.virtualenvs
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 . ~/.local/bin/virtualenvwrapper.sh 
 
