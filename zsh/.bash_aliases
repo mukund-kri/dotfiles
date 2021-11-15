@@ -7,3 +7,5 @@ alias datapop='cp ~/computer/data/population-estimates_csv.csv .'
 alias dataipl='cp ~/computer/data/deliveries.csv ~/computer/data/matches.csv .'
 
 alias serve='python -m http.server'
+
+alias jekyll_run='bundle exec jekyll serve --livereload --drafts'

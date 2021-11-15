@@ -113,3 +113,11 @@ source ~/.bash_aliases
 . ~/.zsh/devenv-complete.sh 
 . ~/.zsh/glutil-complete.sh
 . ~/.zsh/gitutil-complete.sh 
+
+. $HOME/.asdf/asdf.sh
+
+export GOPATH=$HOME/golang
+export PATH="$PATH:/opt/home/mukund/.local/share/coursier/bin"
+
+# opam configuration
+test -r /opt/home/mukund/.opam/opam-init/init.zsh && . /opt/home/mukund/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
