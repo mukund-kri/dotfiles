@@ -1,34 +1,45 @@
+# -*- Mode: shell-script -*-
 # My custom settings
 export PATH=~/bin:$PATH
 export PATH=$PATH:~/.local/bin
 
-# flutter and dart paths
-export DART_HOME=~/computer/software/flutter/bin/cache/dart-sdk
-export PATH=$PATH:$DART_HOME/bin
-export PATH=$PATH:~/computer/software/flutter/bin
-export PATH=$PATH:~/.pub-cache/bin
+
+source ~/.profile
+# flutter and dart paths (if they exist)
+if [ -d /opt/frameworks/flutter ]; then
+    export DART_HOME=/opt/frameworks/flutter/bin/cache/dart-sdk
+    export PATH=$PATH:$DART_HOME/bin
+    export PATH=$PATH:/opt/frameworks/flutter/bin
+    export PATH=$PATH:~/.pub-cache/bin
+fi
 
 # Spark related
-export PATH=$PATH:~/computer/software/spark/bin
+if [ -d /opt/data-engineering/spark ]; then
+    export PATH=$PATH:/opt/data-engineering/spark/bin
+fi
 
 # Python related settings
-export WORKON_HOME=/opt/home/mukund/.virtualenvs
+
+## Enable virtualenv wrapper if exists
+VIRTUALENVWRAPPER_SCRIPT=~/.local/bin/virtualenvwrapper.sh
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-. ~/.local/bin/virtualenvwrapper.sh 
-export PATH=$PATH:~/.local/bin
 
-## PRODUCTIVITY
-export NOW_PROJECT=~/workarea/projects/data-projects/
+if [ -f VIRTUALENVWRAPPER_SCRIPT ]; then
+    export WORKON_HOME=/opt/home/mukund/.virtualenvs
+    . VIRTUALENVWRAPPER_SCRIPT 
+    export PATH=$PATH:~/.local/bin
+fi
 
-alias cdnow='cd $NOW_PROJECT'
 
 # Java / JVM related config ---------------------------------------------------------------
-export GRADLE_HOME=/opt/jvm/gradle
-export PATH=$PATH:$GRADLE_HOME/bin
 
-export JAVA_HOME="/home/mukundk/.cache/coursier/jvm/adopt@1.11.0-11"
-export PATH="/home/mukundk/.cache/coursier/jvm/adopt@1.11.0-11/bin:$PATH"
+# I manage my jvm's via Coursier
+eval "$(cs java --jvm 11 --env)"
 
+if [ -d /opt/jvm/gradle ]; then
+    export GRADLE_HOME=/opt/jvm/gradle
+    export PATH=$PATH:$GRADLE_HOME/bin
+fi
 
 # SPRING FRAMEWORK RELATED
 # source ~/.sdkman/candidates/springboot/current/shell-completion/bash/spring
@@ -40,9 +51,13 @@ export PATH="/home/mukundk/.cache/coursier/jvm/adopt@1.11.0-11/bin:$PATH"
 # source "$HOME/.cargo/env"
 
 # ASDF
+## I use ASDF to manage my ruby / python / node setup
 
-. $HOME/.asdf/asdf.sh
+if [ -d ~/.asdf ]; then
+    . $HOME/.asdf/asdf.sh
+fi
 
+# Onsite go work
 export ONSITE=/srv/www/warehouse/analytics/
 alias onsite='cd $ONSITE'
 
