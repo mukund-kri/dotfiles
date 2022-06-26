@@ -4,7 +4,11 @@ export PATH=~/bin:$PATH
 export PATH=$PATH:~/.local/bin
 
 
+# Common aliases
+alias du1='du --max-depth=1 -h'
+
 source ~/.profile
+
 # flutter and dart paths (if they exist)
 if [ -d /opt/frameworks/flutter ]; then
     export DART_HOME=/opt/frameworks/flutter/bin/cache/dart-sdk
@@ -18,20 +22,27 @@ if [ -d /opt/data-engineering/spark ]; then
     export PATH=$PATH:/opt/data-engineering/spark/bin
 fi
 
-# Python related settings
+# Python related settings -----------------------------------------------------
 
 ## Enable virtualenv wrapper if exists
 VIRTUALENVWRAPPER_SCRIPT=~/.local/bin/virtualenvwrapper.sh
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 
-if [ -f VIRTUALENVWRAPPER_SCRIPT ]; then
+if [ -f $VIRTUALENVWRAPPER_SCRIPT ]; then
     export WORKON_HOME=/opt/home/mukund/.virtualenvs
-    . VIRTUALENVWRAPPER_SCRIPT 
+    . $VIRTUALENVWRAPPER_SCRIPT 
     export PATH=$PATH:~/.local/bin
 fi
 
+PYENV_PATH=~/.pyenv
+if [ -d $PYENV_PATH ]; then
+    export PATH=~/.pyenv/bin:$PATH
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
 
-# Java / JVM related config ---------------------------------------------------------------
+
+# Java / JVM related config ---------------------------------------------------
 
 # I manage my jvm's via Coursier
 eval "$(cs java --jvm 11 --env)"
@@ -40,6 +51,11 @@ if [ -d /opt/jvm/gradle ]; then
     export GRADLE_HOME=/opt/jvm/gradle
     export PATH=$PATH:$GRADLE_HOME/bin
 fi
+
+# Clojure related
+CLOJURE_PATH=/opt/jvm/clojure
+export PATH=$PATH:$CLOJURE_PATH
+
 
 # SPRING FRAMEWORK RELATED
 # source ~/.sdkman/candidates/springboot/current/shell-completion/bash/spring
@@ -57,9 +73,26 @@ if [ -d ~/.asdf ]; then
     . $HOME/.asdf/asdf.sh
 fi
 
-# Onsite go work
+# Onsite go work --------------------------------------------------------------
 export ONSITE=/srv/www/warehouse/analytics/
 alias onsite='cd $ONSITE'
 
+export ONSITE_BACKEND=/srv/www/onsitego/
+alias obackend='cd $ONSITE_BACKEND'
 
+alias workon-rabbitmq='cd /srv/www/microservice-starter/'
 
+# Learn clojure work
+export CLOJURE_WORKSPACE=~/computer/programming/clojure/
+alias workonclojure='cd $CLOJURE_WORKSPACE'
+
+# Learn RabbitMQ
+export RABBITMQ_WORKSPACE=/opt/learn/rabbitmq
+alias learn-rabbitmq='cd $RABBITMQ_WORKSPACE'
+
+### Aliases to SSH servers
+alias ssh-acs1='ssh ubuntu@13.233.17.182'
+alias ssh-acs2='ssh ubuntu@43.204.17.112'
+
+### AWS
+export ACS1=ubuntu@13.233.17.182
