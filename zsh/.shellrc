@@ -54,7 +54,7 @@ fi
 
 # Clojure related
 CLOJURE_PATH=/opt/jvm/clojure
-export PATH=$PATH:$CLOJURE_PATH
+export PATH=$PATH:$CLOJURE_PATH/bin
 
 
 # SPRING FRAMEWORK RELATED
@@ -73,6 +73,13 @@ if [ -d ~/.asdf ]; then
     . $HOME/.asdf/asdf.sh
 fi
 
+# PyEnv
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # Onsite go work --------------------------------------------------------------
 export ONSITE=/srv/www/warehouse/analytics/
 alias onsite='cd $ONSITE'
@@ -80,7 +87,16 @@ alias onsite='cd $ONSITE'
 export ONSITE_BACKEND=/srv/www/onsitego/
 alias obackend='cd $ONSITE_BACKEND'
 
+# aliases to make work easy
+
+alias reshell='source ~/.shellrc'
+alias elib-sync='cd /srv/www/eventlib-sync/'
+alias elib-async='cd /srv/www/eventlib-async/'
+
 alias workon-rabbitmq='cd /srv/www/microservice-starter/'
+
+alias down_all='COMPOSE_PROJECT_NAME=abcd docker-compose -f docker-compose.development.yml down'
+alias up_backend='COMPOSE_PROJECT_NAME=abcd docker-compose -f docker-compose.warehouse.yml up backend'
 
 # Learn clojure work
 export CLOJURE_WORKSPACE=~/computer/programming/clojure/
@@ -92,7 +108,10 @@ alias learn-rabbitmq='cd $RABBITMQ_WORKSPACE'
 
 ### Aliases to SSH servers
 alias ssh-acs1='ssh ubuntu@13.233.17.182'
-alias ssh-acs2='ssh ubuntu@43.204.17.112'
+alias ssh-acs2='ssh -i ~/.ssh/onsite-web-mumbai.pem ubuntu@43.204.17.112'
 
 ### AWS
 export ACS1=ubuntu@13.233.17.182
+
+
+### Docker

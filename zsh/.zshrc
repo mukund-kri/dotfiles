@@ -110,9 +110,7 @@ source ~/.shellrc
 source ~/.bash_aliases 
 
 # My autocompletions
-. ~/.zsh/devenv-complete.sh 
-. ~/.zsh/glutil-complete.sh
-. ~/.zsh/gitutil-complete.sh 
+. ~/.zsh/completion/dplus 
 
 . $HOME/.asdf/asdf.sh
 
