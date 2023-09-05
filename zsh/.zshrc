@@ -111,7 +111,9 @@ source ~/.bash_aliases
 
 # My autocompletions
 . ~/.zsh/completion/dplus 
+. ~/.zsh/challenge_checker-complete.sh
 
+# Used asdf
 . $HOME/.asdf/asdf.sh
 
 export GOPATH=$HOME/golang

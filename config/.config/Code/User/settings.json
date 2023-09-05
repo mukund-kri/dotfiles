@@ -6,12 +6,30 @@
     "editor.formatOnSave": true,
     "github.copilot.enable": {
         "*": true,
-        "yaml": false,
         "plaintext": true,
-        "markdown": false
+        "markdown": true,
+        "scminput": false,
+        "yaml": true,
+        "nim": false,
+        "rust": true
     },
     "editor.rulers": [
         88
     ],
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.colorTheme": "Visual Studio Dark",
+    "yaml.schemas": {
+        "file:///home/mukund/.vscode/extensions/atlassian.atlascode-3.0.4/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "redhat.telemetry.enabled": true,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "[rust]": {
+        "editor.rulers": [
+            100
+        ]
+    }
 }

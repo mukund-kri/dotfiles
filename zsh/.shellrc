@@ -23,7 +23,6 @@ if [ -d /opt/data-engineering/spark ]; then
 fi
 
 # Python related settings -----------------------------------------------------
-
 ## Enable virtualenv wrapper if exists
 VIRTUALENVWRAPPER_SCRIPT=~/.local/bin/virtualenvwrapper.sh
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
@@ -44,11 +43,14 @@ fi
 
 # Java / JVM related config ---------------------------------------------------
 
+# CS deps path
+export PATH="/home/mukund/.local/share/coursier/bin:$PATH"
+
 # I manage my jvm's via Coursier
 eval "$(cs java --jvm 11 --env)"
 
-if [ -d /opt/jvm/gradle ]; then
-    export GRADLE_HOME=/opt/jvm/gradle
+if [ -d /opt/infrastructure/build/gradle ]; then
+    export GRADLE_HOME=/opt/infrastructure/build/gradle
     export PATH=$PATH:$GRADLE_HOME/bin
 fi
 
@@ -80,12 +82,22 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+
+# Golang related config
+export PATH=$PATH:/opt/infrastructure/golang/go/bin/
+
+
+# Nim lang related stuff
+export PATH=/home/mukund/.nimble/bin:$PATH
+
+
 # Onsite go work --------------------------------------------------------------
 export ONSITE=/srv/www/warehouse/analytics/
 alias onsite='cd $ONSITE'
 
 export ONSITE_BACKEND=/srv/www/onsitego/
 alias obackend='cd $ONSITE_BACKEND'
+
 
 # aliases to make work easy
 

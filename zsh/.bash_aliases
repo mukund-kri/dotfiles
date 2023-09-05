@@ -13,3 +13,5 @@ alias jekyll_run='bundle exec jekyll serve --livereload --drafts'
 ## Onsitego
 alias onsitedb='mysql --host=127.0.0.1 --user=test --database=onsitego --password=test'
 alias gobackend='sudo docker-compose -f docker-compose.development.yml exec backend bash'
+
+alias current='source ~/bin/current-project.sh'
