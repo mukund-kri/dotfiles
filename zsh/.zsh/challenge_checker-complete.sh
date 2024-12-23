@@ -1,7 +1,7 @@
-#compdef challenge-checker
+#compdef cchecker
 
 _cc_completion() {
     compadd folders readme help
 }
 
-compdef _cc_completion challenge_checker;
+compdef _cc_completion cchecker;

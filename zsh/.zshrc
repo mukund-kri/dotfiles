@@ -111,13 +111,35 @@ source ~/.bash_aliases
 
 # My autocompletions
 . ~/.zsh/completion/dplus 
-. ~/.zsh/challenge_checker-complete.sh
+# . ~/.zsh/challenge_checker-compete.sh
 
 # Used asdf
 . $HOME/.asdf/asdf.sh
 
-export GOPATH=$HOME/golang
-export PATH="$PATH:/opt/home/mukund/.local/share/coursier/bin"
+    
+# eval "$(zellij setup --generate-auto-start zsh)"
+## fix issue with mouse not working with zellij
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+export PATH=~/.js/npm-global/bin:$PATH
 
 # opam configuration
-test -r /opt/home/mukund/.opam/opam-init/init.zsh && . /opt/home/mukund/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+[[ ! -r /home/mukund/.opam/opam-init/init.zsh ]] || source /home/mukund/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
+### swift
+# export PATH=/opt/infrastructure/swift/swift/usr/bin:$PATH
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$PATH:/home/mukund/.local/share/coursier/bin"

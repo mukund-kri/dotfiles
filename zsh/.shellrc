@@ -3,17 +3,33 @@
 export PATH=~/bin:$PATH
 export PATH=$PATH:~/.local/bin
 
+# What I am currently working on
+alias cdn='cd ~/workarea/teaching/data-projects/jvm/scala/'
+
+# My current note taking setup
+alias cdnotes='cd ~/workarea/challenges/100-days-of-scala/notes/'
 
 # Common aliases
 alias du1='du --max-depth=1 -h'
 
+# Git related aliases
+alias gita='git add .'
+alias gitad='git add . --dry-run'
+alias gitc='git commit -am '
+alias gits='git status'
+
 source ~/.profile
 
+if [ -d /opt/ide/android-studio ]; then
+    export ANDROID_STUDIO=/opt/ide/android-studio
+    export PATH=$PATH:$ANDROID_STUDIO/bin
+fi
+
 # flutter and dart paths (if they exist)
-if [ -d /opt/frameworks/flutter ]; then
-    export DART_HOME=/opt/frameworks/flutter/bin/cache/dart-sdk
+if [ -d /opt/infrastructure/flutter ]; then
+    export DART_HOME=/opt/infrastructure/flutter/bin/cache/dart-sdk
     export PATH=$PATH:$DART_HOME/bin
-    export PATH=$PATH:/opt/frameworks/flutter/bin
+    export PATH=$PATH:/opt/infrastructure/flutter/bin
     export PATH=$PATH:~/.pub-cache/bin
 fi
 
@@ -47,12 +63,12 @@ fi
 export PATH="/home/mukund/.local/share/coursier/bin:$PATH"
 
 # I manage my jvm's via Coursier
-eval "$(cs java --jvm 11 --env)"
+eval "$(cs java --jvm 21 --env)"
 
-if [ -d /opt/infrastructure/build/gradle ]; then
-    export GRADLE_HOME=/opt/infrastructure/build/gradle
-    export PATH=$PATH:$GRADLE_HOME/bin
-fi
+#if [ -d /opt/infrastructure/build/gradle ]; then
+    #export GRADLE_HOME=/opt/infrastructure/build/gradle
+    #export PATH=$PATH:$GRADLE_HOME/bin
+#fi
 
 # Clojure related
 CLOJURE_PATH=/opt/jvm/clojure
@@ -74,14 +90,6 @@ export PATH=$PATH:$CLOJURE_PATH/bin
 if [ -d ~/.asdf ]; then
     . $HOME/.asdf/asdf.sh
 fi
-
-# PyEnv
-
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 
 # Golang related config
 export PATH=$PATH:/opt/infrastructure/golang/go/bin/
@@ -121,6 +129,10 @@ alias learn-rabbitmq='cd $RABBITMQ_WORKSPACE'
 ### Aliases to SSH servers
 alias ssh-acs1='ssh ubuntu@13.233.17.182'
 alias ssh-acs2='ssh -i ~/.ssh/onsite-web-mumbai.pem ubuntu@43.204.17.112'
+
+### Rust toolchain for ESP32
+alias get_esprs='. $HOME/export-esp.sh'
+
 
 ### AWS
 export ACS1=ubuntu@13.233.17.182
