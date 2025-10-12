@@ -10,14 +10,14 @@
         "markdown": true,
         "scminput": false,
         "yaml": true,
-        "nim": false,
+        "nim": true,
         "rust": true,
-        "crystal": true
+        "crystal": true,
+        "go": false
     },
     "editor.rulers": [
         88
     ],
-    "workbench.colorTheme": "Visual Studio Light - C++",
     "yaml.schemas": {
         "file:///home/mukund/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
@@ -42,7 +42,7 @@
     },
     "cmake.showOptionsMovedNotification": false,
     "go.toolsManagement.autoUpdate": true,
-    "idf.espIdfPath": "/home/mukund/esp/esp-idf",
+    "idf.espIdfPath": "/home/mukund/esp/v5.4.1/esp-idf",
     "idf.pythonBinPath": "/home/mukund/.espressif/python_env/idf5.1_py3.10_env/bin/python",
     "idf.toolsPath": "/home/mukund/.espressif",
     "idf.customExtraPaths": "/home/mukund/.espressif/tools/xtensa-esp-elf-gdb/12.1_20221002/xtensa-esp-elf-gdb/bin:/home/mukund/.espressif/tools/riscv32-esp-elf-gdb/12.1_20221002/riscv32-esp-elf-gdb/bin:/home/mukund/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin:/home/mukund/.espressif/tools/xtensa-esp32s2-elf/esp-12.2.0_20230208/xtensa-esp32s2-elf/bin:/home/mukund/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin:/home/mukund/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin:/home/mukund/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/mukund/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/bin:/home/mukund/.espressif/tools/ninja/1.10.2:/home/mukund/.espressif/tools/esp-rom-elfs/20230320",
@@ -54,5 +54,36 @@
     "cmake.configureOnOpen": false,
     "github.copilot.editor.enableAutoCompletions": true,
     "lldb.library": "/home/mukund/.local/share/swiftly/toolchains/5.10.1/usr/lib/liblldb.so",
-    "lldb.launch.expressions": "native"
+    "lldb.launch.expressions": "native",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "workbench.colorTheme": "Visual Studio 2017 Light - C++",
+    "idf.pythonInstallPath": "/home/mukund/.pyenv/shims/python",
+    "idf.hasWalkthroughBeenShown": true,
+    "lldb.suppressUpdateNotifications": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "dart.debugExternalPackageLibraries": true,
+    "dart.debugSdkLibraries": true
 }

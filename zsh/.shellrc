@@ -1,7 +1,7 @@
 # -*- Mode: shell-script -*-
 # My custom settings
 export PATH=~/bin:$PATH
-export PATH=$PATH:~/.local/bin
+# export PATH=$PATH:~/.local/bin
 
 # What I am currently working on
 alias cdn='cd ~/workarea/teaching/data-projects/jvm/scala/'
@@ -105,7 +105,6 @@ alias onsite='cd $ONSITE'
 
 export ONSITE_BACKEND=/srv/www/onsitego/
 alias obackend='cd $ONSITE_BACKEND'
-
 
 # aliases to make work easy
 
