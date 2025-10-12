@@ -12,4 +12,18 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+
+	"Topic Header": {
+		"prefix": "topic",
+		"body": [
+			"/*",
+			" * Topic: $1",
+			" * ",
+			" * Author: Mukund Krishnamurthy",
+			" * Date:   $2",
+			" * ",
+			" * $3",
+			" */ "
+		]
+	}
 }
