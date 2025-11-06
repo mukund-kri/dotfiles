@@ -85,5 +85,7 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "dart.debugExternalPackageLibraries": true,
-    "dart.debugSdkLibraries": true
+    "dart.debugSdkLibraries": true,
+    "geminicodeassist.project": "electric-perigee-v524r",
+    "diffEditor.codeLens": true
 }
