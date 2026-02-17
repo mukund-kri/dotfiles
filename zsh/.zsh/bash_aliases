@@ -15,3 +15,13 @@ alias onsitedb='mysql --host=127.0.0.1 --user=test --database=onsitego --passwor
 alias gobackend='sudo docker-compose -f docker-compose.development.yml exec backend bash'
 
 alias current='source ~/bin/current-project.sh'
+
+# Alias for VS Code Embedded Development Profile
+alias platformio='code --profile "Embeded"'
+alias vscode='code --profile "Default"'
+alias scriptside='code --profile "ScriptsIDE"'
+
+# Terminator related aliases
+alias dev-teebox='terminator -l TeeBox'
+alias dev-orch='terminator -l OrchDev'
+alias dev-spark='terminator -l SparkDev'
