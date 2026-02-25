@@ -1,27 +1,22 @@
 # -*- mode: shell-script -*-
 
-alias spsql='sudo -u postgres psql'
-alias pipall='pip install wheel && pip install -r requirements.txt'
-
-alias datapop='cp ~/computer/data/population-estimates_csv.csv .'
-alias dataipl='cp ~/computer/data/deliveries.csv ~/computer/data/matches.csv .'
+### git aliases
+alias gstat='git status'
 
 alias serve='python -m http.server'
 
-alias jekyll_run='bundle exec jekyll serve --livereload --drafts'
-
-alias current='source ~/bin/current-project.sh'
-
 ### Gradle related aliases
 alias gr="./gradlew run"
-# Alias for VS Code Embedded Development Profile
+
+
+# Alias for various VS Code Profiles
 alias platformio='code --profile "Embeded"'
 alias vscode='code --profile "Default"'
 alias scriptside='code --profile "ScriptsIDE"'
 
-# Terminator related aliases
-alias dev-teebox='terminator -l TeeBox'
-alias dev-orch='terminator -l OrchDev'
-alias dev-spark='terminator -l SparkDev'
-### git aliases
-alias gstat='git status'
+## Terminator related aliases
+## I have moved to zellij. Comment and leaving in file for historic reasons.
+# alias dev-teebox='terminator -l TeeBox'
+# alias dev-orch='terminator -l OrchDev'
+# alias dev-spark='terminator -l SparkDev'
+
