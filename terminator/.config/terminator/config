@@ -1,0 +1,174 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:1224
+      maximised = True
+      fullscreen = False
+      size = 1920, 1052
+      title = mukund@Victus:~/workarea/getforj/in-bay-orchestrator
+      last_active_term = 85e473da-3ea8-4fe6-87dc-a91d5c3de727
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 959
+      ratio = 0.5007832898172324
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 85e473da-3ea8-4fe6-87dc-a91d5c3de727
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 525
+      ratio = 0.501432664756447
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 37fd5d1f-73c8-4b04-a6f6-eae3102b2e3f
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = a6dfa80b-1b7f-48fe-b597-c9b51138091c
+  [[SparkDev]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1920:0
+      maximised = False
+      fullscreen = False
+      size = 1920, 2132
+      title = Spark Dev
+      last_active_window = False
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = SparkDev
+      directory = /home/mukund/workarea/getforj/spark
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 1064
+      ratio = 0.5002350728725905
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = SparkDev
+      directory = /home/mukund/workarea/getforj/spark
+      command = npm run api:fitting; zsh
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = SparkDev
+      directory = /home/mukund/workarea/getforj/spark
+      command = npx tsx scripts/data-api-server.ts; zsh
+  [[OrchDev]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:1224
+      maximised = True
+      fullscreen = False
+      size = 1920, 1052
+      title = Orchestrator Development
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 959
+      ratio = 0.5007832898172324
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      directory = ""
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 525
+      ratio = 0.501432664756447
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      directory = /home/mukund/workarea/getforj/spark
+      command = npm run api:fitting; exec zsh
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      directory = /home/mukund/workarea/getforj/in-bay-orchestrator
+      command = 'bash -c "uv run uvicorn app.main:app --reload --port 8082; exec zsh"'
+  [[TeeBox]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:1224
+      maximised = True
+      fullscreen = False
+      size = 1920, 1052
+      title = Tee Box
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 959
+      ratio = 0.5007832898172324
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      directory = /home/mukund/workarea/getforj/teebox-fit-app
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 525
+      ratio = 0.501432664756447
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      directory = /home/mukund/workarea/getforj/spark
+      command = 'zsh -ic "npm run api:fitting; exec zsh"'
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      directory = /home/mukund/workarea/getforj/in-bay-orchestrator
+      command = 'bash -c "uv run uvicorn app.main:app --reload --port 8082; exec zsh"'
+c[plugins]
