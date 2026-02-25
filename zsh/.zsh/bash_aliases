@@ -8,11 +8,13 @@ alias serve='python -m http.server'
 ### Gradle related aliases
 alias gr="./gradlew run"
 
-
 # Alias for various VS Code Profiles
 alias platformio='code --profile "Embeded"'
 alias vscode='code --profile "Default"'
 alias scriptside='code --profile "ScriptsIDE"'
+
+## Aliases for zellij layouts
+alias dev-catalog-lib='zellij --layout dev-catelog-lib'
 
 ## Terminator related aliases
 ## I have moved to zellij. Comment and leaving in file for historic reasons.
