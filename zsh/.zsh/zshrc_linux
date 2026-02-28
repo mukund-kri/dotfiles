@@ -16,6 +16,7 @@ source ~/.zsh/shellrc
 
 # Common alias across all my systems
 source ~/.zsh/bash_aliases 
+echo "Loaded Aliases"
 
 # My autocompletions
 # . ~/.zsh/completion/dplus 

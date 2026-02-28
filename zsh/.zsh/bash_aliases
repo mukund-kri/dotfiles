@@ -15,6 +15,7 @@ alias scriptside='code --profile "ScriptsIDE"'
 
 ## Aliases for zellij layouts
 alias dev-catalog-lib='zellij --layout dev-catelog-lib'
+alias spark-graphql='zellij --layout spark-graphql'
 
 ## Terminator related aliases
 ## I have moved to zellij. Comment and leaving in file for historic reasons.

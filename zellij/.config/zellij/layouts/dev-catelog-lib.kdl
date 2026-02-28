@@ -1,6 +1,6 @@
 layout {
     pane split_direction="vertical" {
-        pane cwd="/home/mukund/workarea/getforj/equipment-lib-prisma" command="zsh" {
+        pane cwd="/home/mukund/workarea/getforj/spark-lib" command="zsh" {
             args "-c" "antigravity . && exec zsh"
         }
         pane cwd="/home/mukund/workarea/getforj/equipment-lib-prisma-example-code"
