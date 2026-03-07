@@ -14,7 +14,7 @@ alias vscode='code --profile "Default"'
 alias scriptside='code --profile "ScriptsIDE"'
 
 ## Aliases for zellij layouts
-alias dev-catalog-lib='zellij --layout dev-catelog-lib'
+alias spark-lib='zellij --layout spark-lib'
 alias spark-graphql='zellij --layout spark-graphql'
 
 ## Terminator related aliases
