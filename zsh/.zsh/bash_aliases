@@ -17,6 +17,7 @@ alias scriptside='code --profile "ScriptsIDE"'
 alias spark-lib='zellij --layout spark-lib'
 alias spark-graphql='zellij --layout spark-graphql'
 alias spark='zellij --layout spark'
+alias railway='zellij --layout railway'
 
 ## Terminator related aliases
 ## I have moved to zellij. Comment and leaving in file for historic reasons.
