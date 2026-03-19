@@ -1,8 +1,8 @@
 layout {
     pane split_direction="vertical" {
-        pane cwd="/home/mukund/workarea/getforj/railway-deployment-experiments" name="railway" command="zsh" {
+        pane cwd="/home/mukund/workarea/getforj/experiments/railway-deployment-experiments" name="railway" command="zsh" {
             args "-c" "antigravity . && exec zsh"
         }
-        pane cwd="/home/mukund/workarea/getforj/railway-deployment-experiments" name="railway-aux"
+        pane cwd="/home/mukund/workarea/getforj/experiments/railway-deployment-experiments" name="railway-aux"
     }
 }

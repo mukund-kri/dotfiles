@@ -1,20 +1,21 @@
 layout {
     pane split_direction="vertical" {
         pane split_direction="horizontal" {
-            pane cwd="/home/mukund/workarea/getforj/spark" name="spark-api" command="zsh" {
+            pane cwd="/home/mukund/workarea/getforj/core/spark" name="spark-api" command="zsh" {
                 args "-c" "npm run api:fitting; exec zsh"
             }
-            pane cwd="/home/mukund/workarea/getforj/in-bay-orchestrator" name="in-bay-orchestrator" command="zsh" {
-                args "-c" "uv run uvicorn app.main:app --reload --port 8082; exec zsh"
+            pane cwd="/home/mukund/workarea/getforj/core/in-bay-orchestrator" name="in-bay-orchestrator" command="zsh" {
+                args "-c" "uv run uvicorn app.main:sio_app --reload --port 8082; exec zsh"
             }
         }
         pane split_direction="horizontal" {
-            pane cwd="/home/mukund/workarea/getforj/teebox-fit-app" name="teebox-fit-app" command="zsh" {
+            pane cwd="/home/mukund/workarea/getforj/core/teebox-fit-app" name="teebox-fit-app" command="zsh" {
                 args "-c" "npm run dev; exec zsh"
             }
-            pane cwd="/home/mukund/workarea/getforj/fit-customer-app" name="fit-customer-app" command="zsh" {
+            pane cwd="/home/mukund/workarea/getforj/core/fit-customer-app" name="fit-customer-app" command="zsh" {
                 args "-c" "npm run dev; exec zsh"
             }
         }
     }
 }
+ 

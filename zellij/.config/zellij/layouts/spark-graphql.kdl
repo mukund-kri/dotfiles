@@ -1,8 +1,8 @@
 layout {
     pane split_direction="vertical" {
-        pane cwd="/home/mukund/workarea/getforj/spark-graphql" name="spark-graphql" command="zsh" {
+        pane cwd="/home/mukund/workarea/getforj/on-hold/spark-graphql" name="spark-graphql" command="zsh" {
             args "-c" "antigravity . && exec zsh"
         }
-        pane cwd="/home/mukund/workarea/getforj/spark-graphql-test" name="spark-graphql-test"
+        pane cwd="/home/mukund/workarea/getforj/on-hold/spark-graphql-test" name="spark-graphql-test"
     }
 }
