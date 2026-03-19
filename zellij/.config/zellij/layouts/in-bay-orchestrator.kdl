@@ -1,0 +1,10 @@
+layout {
+    pane split_direction="vertical" {
+        pane cwd="/home/mukund/workarea/getforj/core/in-bay-orchestrator" name="orchestrator-server" command="zsh" {
+            args "-c" "uv run -m uvicorn app.main:sio_app --reload --port 8082; exec zsh"
+        }
+        pane cwd="/home/mukund/workarea/getforj/core/in-bay-orchestrator" name="terminal" command="zsh" {
+            args "-c" "antigravity . && exec zsh"
+        }
+    }
+}
