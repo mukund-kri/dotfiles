@@ -23,6 +23,7 @@ alias fit-customer-app='zellij --layout fit-customer-app'
 alias in-bay='zellij --layout in-bay-orchestrator'
 alias dotfiles='zellij --layout dotfiles'
 alias flutter_linux='zellij --layout flutter_linux'
+alias langchain-rag='zellij --layout langchain-rag'
 
 alias dcu-db='docker compose -f ~/workarea/getforj/utils/docker-services/docker-compose.yml up -d'
 
