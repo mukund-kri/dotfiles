@@ -63,3 +63,4 @@ This repository manages personal dotfiles using **GNU Stow**. All configurations
    ```shell
    alias my-layout='zellij --layout my-layout'
    ```
+5. Make git commit with the changes.
