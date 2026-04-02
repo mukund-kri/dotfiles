@@ -5,7 +5,7 @@ layout {
                 args "-c" "npm run api:fitting; exec zsh"
             }
             pane cwd="/home/mukund/workarea/getforj/core/in-bay-orchestrator" name="in-bay-orchestrator" command="zsh" {
-                args "-c" "uv run uvicorn app.main:sio_app --reload --port 8082; exec zsh"
+                args "-c" "uv run -m uvicorn app.main:sio_app --reload --port 8082; exec zsh"
             }
         }
         pane split_direction="horizontal" {

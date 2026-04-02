@@ -88,5 +88,6 @@
     "geminicodeassist.project": "electric-perigee-v524r",
     "diffEditor.codeLens": true,
     "workbench.colorTheme": "Visual Studio Light",
-    "window.newWindowProfile": "Default"
+    "window.newWindowProfile": "Default",
+    "workbench.statusBar.visible": false
 }
