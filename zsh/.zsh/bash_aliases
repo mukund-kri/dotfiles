@@ -33,3 +33,4 @@ alias dcu-db='docker compose -f ~/workarea/getforj/utils/docker-services/docker-
 # alias dev-orch='terminator -l OrchDev'
 # alias dev-spark='terminator -l SparkDev'
 
+alias utilites='zellij --layout utilites'
