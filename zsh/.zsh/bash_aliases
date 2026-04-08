@@ -35,3 +35,4 @@ alias dcu-db='docker compose -f ~/workarea/getforj/utils/docker-services/docker-
 
 alias utilites='zellij --layout utilites'
 alias chatbot='zellij --layout chatbot'
+alias rust-esp='zellij --layout rust-esp'
