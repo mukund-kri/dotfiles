@@ -1,0 +1,16 @@
+layout {
+    pane split_direction="vertical" {
+        pane split_direction="horizontal" {
+            pane cwd="/home/mukund/workarea/getforj/llm/golf_bot/api" name="golfbot-api" command="zsh" {
+               args "-c" "uv run fastapi dev main.py; exec zsh"
+            }
+            pane cwd="/home/mukund/workarea/getforj/llm/golf_bot/ui" name="golfbot-ui" command="zsh" {
+                args "-c" "npm run dev; exec zsh"
+            }
+        
+        }
+        pane cwd="/home/mukund/workarea/getforj/llm/golf_bot" name="golfbot-ai" command="zsh" {
+                args "-c" "antigravity . && exec zsh"
+        }
+    }
+}
