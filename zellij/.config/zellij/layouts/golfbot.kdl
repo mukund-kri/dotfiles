@@ -10,7 +10,7 @@ layout {
         
         }
         pane cwd="/home/mukund/workarea/getforj/llm/golf_bot" name="golfbot-ai" command="zsh" {
-                args "-c" "antigravity . && exec zsh"
+                args "-c" "codium . && exec zsh"
         }
     }
 }

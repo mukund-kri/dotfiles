@@ -58,7 +58,7 @@ This repository manages personal dotfiles using **GNU Stow**. All configurations
          }
      }
      ```
-3. Antigravity (or rarely vscode) is also launched in one of the panes on startup.
+3. codium is also launched in one of the panes on startup.
 4. Add an alias to `zsh/.zsh/bash_aliases` for easy access:
    ```shell
    alias my-layout='zellij --layout my-layout'

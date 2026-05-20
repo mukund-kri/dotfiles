@@ -8,10 +8,10 @@ alias serve='python -m http.server'
 ### Gradle related aliases
 alias gr="./gradlew run"
 
-# Alias for various VS Code Profiles
-alias platformio='code --profile "Embeded"'
-alias vscode='code --profile "Default"'
-alias scriptside='code --profile "ScriptsIDE"'
+# Alias for various VSCodium Profiles
+alias platformio='codium --profile "Embeded"'
+alias vscode='codium --profile "Default"'
+alias scriptside='codium --profile "ScriptsIDE"'
 
 ## Aliases for zellij layouts
 alias spark-lib='zellij --layout spark-lib'
