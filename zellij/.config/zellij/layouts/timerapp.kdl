@@ -1,7 +1,7 @@
 layout {
     pane split_direction="vertical" {
         pane cwd="/home/mukund/workarea/tools/timerapp" name="timerapp" command="zsh" {
-            args "-c" "/opt/ide/android-studio/bin/studio . && exec zsh"
+            args "-c" "/opt/ide/android-studio/bin/studio . > /dev/null 2>&1 & exec zsh"
         }
         pane cwd="/home/mukund/workarea/tools/timerapp" name="timerapp-aux"
     }

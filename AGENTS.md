@@ -1,8 +1,10 @@
-# .dotfiles GEMINI.md
+# AGENTS.md
 
 This repository manages personal dotfiles using **GNU Stow**. All configurations should be managed within this repository and symlinked to the appropriate locations in the home directory.
 
 ## Core Mandates
+1. Layout in this project refers to zellij layouts
+2. Look in the zellij/ folder for zellinj layouts
 
 ### Tooling & Management
 
@@ -42,6 +44,7 @@ This repository manages personal dotfiles using **GNU Stow**. All configurations
 - Ensure that symlinks are correctly created and pointing to the intended files in this repository.
 
 ## Common Recipes
+
 
 ### Adding a Zellij Layout
 
