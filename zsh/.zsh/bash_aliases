@@ -37,6 +37,7 @@ alias utilites='zellij --layout utilites'
 alias chatbot='zellij --layout chatbot'
 alias rust-esp='zellij --layout rust-esp'
 alias golfbot='zellij --layout golfbot'
+alias timerapp='zellij --layout timerapp'
 
 
 ### git aliases
