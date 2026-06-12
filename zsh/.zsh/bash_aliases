@@ -24,6 +24,8 @@ alias golfbot='zellij --layout golfbot'
 alias timerapp='zellij --layout timerapp'
 alias merlin='zellij --layout merlin'
 alias models='zellij --layout models'
+alias shotgen='zellij --layout shotgen'
+
 
 ## Docker Compose aliases
 alias dcu-db='docker compose -f ~/workarea/getforj/utils/docker-services/docker-compose.yml up -d'

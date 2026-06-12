@@ -1,0 +1,8 @@
+layout {
+    pane split_direction="vertical" {
+        pane cwd="/home/mukund/workarea/getforj/utils/shot-generator" name="shotgen" command="zsh" {
+            args "-c" "codium . && exec zsh"
+        }
+        pane cwd="/home/mukund/workarea/getforj/utils/shot-generator" name="shotgen-aux"
+    }
+}
