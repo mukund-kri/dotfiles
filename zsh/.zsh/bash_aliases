@@ -25,6 +25,7 @@ alias timerapp='zellij --layout timerapp'
 alias merlin='zellij --layout merlin'
 alias models='zellij --layout models'
 alias shotgen='zellij --layout shotgen'
+alias automated-tests='zellij --layout automated-tests'
 
 
 ## Docker Compose aliases
