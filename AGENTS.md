@@ -55,7 +55,7 @@ This repository manages personal dotfiles using **GNU Stow**. All configurations
      layout {
          pane split_direction="vertical" {
              pane cwd="/path/to/project" name="project-name" command="zsh" {
-                 args "-c" "exec zsh"
+                 args "-c" "codium . && exec zsh"
              }
              pane cwd="/path/to/project" name="aux"
          }
