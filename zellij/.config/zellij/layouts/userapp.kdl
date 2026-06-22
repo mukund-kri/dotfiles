@@ -1,8 +1,6 @@
 layout {
     pane split_direction="vertical" {
-        pane cwd="/home/mukund/workarea/getforj/core/fit-customer-app" name="user-app" command="zsh" {
-            args "-c" "npm run dev; exec zsh"
-        }
+        pane cwd="/home/mukund/workarea/getforj/core/fit-customer-app" name="user-app"
         pane cwd="/home/mukund/workarea/getforj/core/fit-customer-app" name="terminal" command="zsh" {
             args "-c" "codium . && exec zsh"
         }
