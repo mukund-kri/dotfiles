@@ -16,7 +16,7 @@ alias scriptside='codium --profile "ScriptsIDE"'
 ## Aliases for zellij layouts
 alias spark='zellij --layout spark'
 alias scripts='zellij --layout scripts'
-alias fit-customer-app='zellij --layout fit-customer-app'
+alias fullstack='zellij --layout fullstack'
 alias in-bay='zellij --layout in-bay-orchestrator'
 alias dotfiles='zellij --layout dotfiles'
 alias utilites='zellij --layout utilites'
@@ -26,6 +26,8 @@ alias merlin='zellij --layout merlin'
 alias models='zellij --layout models'
 alias shotgen='zellij --layout shotgen'
 alias automated-tests='zellij --layout automated-tests'
+alias userapp='zellij --layout userapp'
+
 
 
 ## Docker Compose aliases
