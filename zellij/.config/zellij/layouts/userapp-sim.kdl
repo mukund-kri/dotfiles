@@ -1,0 +1,8 @@
+layout {
+    pane split_direction="vertical" {
+        pane cwd="/home/mukund/workarea/getforj/utils/orchestrator-socket-io-simulator" name="userapp-sim" command="zsh" {
+            args "-c" "codium . && exec zsh"
+        }
+        pane cwd="/home/mukund/workarea/getforj/utils/orchestrator-socket-io-simulator" name="userapp-sim-aux"
+    }
+}
