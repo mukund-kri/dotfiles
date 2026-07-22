@@ -27,6 +27,7 @@ alias models='zellij --layout models'
 alias shotgen='zellij --layout shotgen'
 alias automated-tests='zellij --layout automated-tests'
 alias userapp='zellij --layout userapp'
+alias kbase='zellij --layout kbase'
 
 
 
