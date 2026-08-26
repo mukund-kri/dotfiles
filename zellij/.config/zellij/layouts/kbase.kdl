@@ -1,9 +1,9 @@
 layout {
     pane split_direction="vertical" {
-        pane cwd="/home/mukund/workarea/getforj/core/getforj-knowledge-base" name="tolaria" command="zsh" {
+        pane cwd="/home/mukund/workarea/getforj/knowledge/getforj-knowledge-base" name="tolaria" command="zsh" {
             args "-c" "~/bin/tolaria; exec zsh"
         }
-        pane cwd="/home/mukund/workarea/getforj/core/getforj-knowledge-base" name="codium" command="zsh" {
+        pane cwd="/home/mukund/workarea/getforj/knowledge/getforj-knowledge-base" name="codium" command="zsh" {
             args "-c" "codium . && exec zsh"
         }
     }
