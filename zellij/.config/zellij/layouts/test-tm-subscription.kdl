@@ -1,0 +1,8 @@
+layout {
+    pane split_direction="vertical" {
+        pane cwd="/home/mukund/workarea/getforj/utils/test-tracman-subscription" name="test-tm-subscription" command="zsh" {
+            args "-c" "codium . && exec zsh"
+        }
+        pane cwd="/home/mukund/workarea/getforj/utils/test-tracman-subscription" name="test-tm-subscription-aux"
+    }
+}
