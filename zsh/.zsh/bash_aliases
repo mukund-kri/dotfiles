@@ -31,6 +31,7 @@ alias kbase='zellij --layout kbase'
 alias pbase='zellij --layout pbase'
 alias userapp-sim='zellij --layout userapp-sim'
 alias test-tm-subscription='zellij --layout test-tm-subscription'
+alias sim-stack-userapp='zellij --layout sim-stack-userapp'
 
 
 
